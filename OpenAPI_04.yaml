@@ -1,0 +1,44 @@
+openapi: 3.0.0
+info:
+  title: EazyShop Products APIs Definition
+  version: 1.0.1
+  description: A pet store manager
+  termsOfService: htps://example.com/terms
+  contact:
+    email: suppot@example.com
+    name: API Support
+    url: https://www.example.com/support
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+  - url: https://development.gigantic-server.com/v1
+    description: Development Server
+paths:
+  /categories:
+    get:
+      summary: List one categories
+      description: Return one of categories supported
+      parameters:
+        - name: categoryId
+          in: query
+          schema:
+            type: integer
+            minimum: 100
+            maximum: 1000
+          example: 101
+      responses:
+        '200':
+          description: A list of one categories
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    categoryId:
+                      type: integer
+                    name:
+                      type: string
+                    
