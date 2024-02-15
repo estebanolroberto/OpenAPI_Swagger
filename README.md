@@ -8,7 +8,7 @@ This course is divided into 11 main sections:
 3. Getting started with OpenAPI Specification in design first scenario
 4. Deep dive on Paths inside Open API specifications
 5. Writing better documentation inside OpenAPI specification
-6.Building reusable content using components inside OpenAPI specification
+6. Building reusable content using components inside OpenAPI specification
 7. Deep dive on Data types inside OpenAPI specification
 8. Inheritance /& polymorphism inside OpenAPI specification
 9. Other advance topics inside OpenAPI specification
